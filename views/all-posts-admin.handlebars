@@ -1,0 +1,12 @@
+<div class="posts list-group">
+  {{#each posts}}
+    <a class="list-item" href="/dashboard/edit/{{id}}">
+      <header class="list-item-header">
+        <h2>{{title}}</h2>
+      </header>
+      <section class="list-item-content">
+        <p class="list-item-date">{{format_date createdAt}}</p>
+      </section>
+    </a>
+  {{/each}}
+</div>

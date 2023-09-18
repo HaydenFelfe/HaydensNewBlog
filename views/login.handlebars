@@ -1,0 +1,27 @@
+<div class="card login-card">
+  <header class="card-header">
+    <h1>Login</h1>
+  </header>
+  <section id="login-form" class="card-body">
+    <form>
+      <div class="form-group">
+        <label for="username-input-login">Username</label>
+        <input type="text" id="username-input-login" class="form-input" placeholder="Enter your username" autofocus />
+      </div>
+      <div class="form-group">
+        <label for="password-input-login" class="form-label">Password</label>
+        <input type="password" id="password-input-login" class="form-input" placeholder="Enter your password" />
+        <div class="password-toggle">
+          <input type="checkbox" id="show-password" />
+          <label for="show-password">Show Password</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <button type="submit" id="login-btn" class="btn login-btn">Login!</button>
+      </div>
+    </form>
+    <p class="login-link">Don't have an account? <a href="/signup">Sign up instead</a></p>
+  </section>
+</div>
+
+<script src="/js/login.js"></script>

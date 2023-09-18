@@ -1,0 +1,15 @@
+<div class="posts">
+  {{#each posts}}
+  <article class="card">
+    <header class="card-header">
+      <h1>{{title}}</h1>
+    </header>
+    <section class="card-body">
+      <p>{{body}}</p>
+    </section>
+    <footer class="card-footer">
+      <p>Posted by {{User.username}} on {{format_date createdAt}}</p>
+    </footer>
+  </article>
+  {{/each}}
+</div>
